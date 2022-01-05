@@ -19,7 +19,7 @@ def generate_wildcards(tracker_path):
     hour = '{:0>2d}'.format(track_time.hour)
     minute_start = track_time.minute
     minute_wildcard_str = '{' + '{:0>2d}'.format(minute_start)
-    for m in range(minute_start + 1, minute_start + 60):
+    for m in range(minute_start + 1, minute_start + 15):
         minute_wildcard_str += ',{:0>2d}'.format(m)
     minute_wildcard_str += '}'
 
